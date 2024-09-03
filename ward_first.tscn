@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c81nsug50wvo"]
+
+[ext_resource type="Texture2D" uid="uid://ceo0ag4amrv80" path="res://Illustration113.png" id="1_fjw62"]
+
+[node name="WardFirst" type="Node2D"]
+
+[node name="Illustration113" type="Sprite2D" parent="."]
+position = Vector2(816.75, 322.5)
+scale = Vector2(0.599074, 0.599074)
+texture = ExtResource("1_fjw62")

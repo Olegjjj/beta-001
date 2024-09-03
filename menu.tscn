@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://bhllkq624efp6"]
+
+[ext_resource type="Texture2D" uid="uid://cbitkugq4hleh" path="res://Illustration114.png" id="1_a6c44"]
+[ext_resource type="Texture2D" uid="uid://ojh6nux5rkn7" path="res://Illustration115.png" id="2_2fsah"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecjeg"]
+atlas = ExtResource("1_a6c44")
+region = Rect2(0, 0, 1960, 1080)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujohe"]
+atlas = ExtResource("2_2fsah")
+region = Rect2(0, 0, 1960, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2j6ul"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecjeg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujohe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Menu" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(592, 324)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_2j6ul")
+autoplay = "default"
+frame_progress = 0.347872
+
+[node name="Button" type="Button" parent="."]
+offset_left = 88.0
+offset_top = 581.0
+offset_right = 216.0
+offset_bottom = 624.0
+text = "Играть"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 289.0
+offset_top = 581.0
+offset_right = 439.0
+offset_bottom = 623.0
+text = "Продолжить"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 771.0
+offset_top = 581.0
+offset_right = 920.0
+offset_bottom = 624.0
+text = "Настройки"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 963.0
+offset_top = 581.0
+offset_right = 1115.0
+offset_bottom = 625.0
+text = "Выход"
